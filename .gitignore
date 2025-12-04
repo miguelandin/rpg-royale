@@ -3,22 +3,18 @@ bin/
 target/        # Para proyectos Maven
 build/         # Para proyectos Gradle
 
-# Archivos de configuración del IDE
-/.idea/        # IntelliJ
-/*.iml         # IntelliJ
-.classpath     # Eclipse
-.project       # Eclipse
-.settings/     # Eclipse
+/.idea/
+/*.iml
+.classpath
+.project
+.settings/
 
-# Archivos temporales
 *.log
 *.tmp
 *.swp
 
-# Archivos específicos de plataformas
-.DS_Store      # macOS
-Thumbs.db      # Windows
+.DS_Store
+Thumbs.db
 
-# Sensibles
-*.properties    # datos sensibles
-*.env          # variables de entorno
+*.properties
+*.env
