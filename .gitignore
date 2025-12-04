@@ -1,0 +1,24 @@
+# Ignorar carpetas de compilación
+bin/
+target/        # Para proyectos Maven
+build/         # Para proyectos Gradle
+
+# Archivos de configuración del IDE
+/.idea/        # IntelliJ
+/*.iml         # IntelliJ
+.classpath     # Eclipse
+.project       # Eclipse
+.settings/     # Eclipse
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Archivos específicos de plataformas
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# Sensibles
+*.properties    # datos sensibles
+*.env          # variables de entorno
