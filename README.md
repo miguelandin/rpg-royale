@@ -1,5 +1,5 @@
 # RPG ROYALE
-Made by: Marco, Hugo, Miguel, Mike, Pablo y Imbécil Anónimo
+Made by: Marco, Hugo, Miguel, Mike, Pablo e Imbécil Anónimo
 
 ---
 ### tree
