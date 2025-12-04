@@ -1,7 +1,7 @@
 # Ignorar carpetas de compilación
 bin/
-target/        # Para proyectos Maven
-build/         # Para proyectos Gradle
+target/
+build/
 
 /.idea/
 /*.iml
