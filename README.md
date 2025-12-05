@@ -1,5 +1,5 @@
 # RPG ROYALE
-Made by: Marco, Hugo, Miguel, Mike, Pablo and ???
+Made by: Marco, Hugo, Miguel, Mike, Pablo and Alfredo
 
 ---
 ### tree
@@ -25,3 +25,17 @@ rpg-royale
 ---
 ### UML
 ![img](public/UML.png)
+
+---
+### Usar git
+##### Elegir rama
+```bash
+git checkout <nombre_rama> # selecciona tu rama para trabajar en ella
+```
+
+##### Subir cambios
+```bash
+git add . # añade los cambios realizados
+git commit -m "CAMBIOS" # Añadir un mensaje describiendo los cambios
+git push # hacer un push de los cambios (!Hacerlo en tu rama de trabajdo)
+```
