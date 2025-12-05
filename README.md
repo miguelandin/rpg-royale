@@ -28,11 +28,6 @@ rpg-royale
 
 ---
 ### Usar git
-##### Elegir rama
-```bash
-git checkout <nombre_rama> # selecciona tu rama para trabajar en ella
-```
-
 ##### Subir cambios
 ```bash
 git add . # añade los cambios realizados
