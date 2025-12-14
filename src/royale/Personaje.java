@@ -23,7 +23,6 @@ public abstract class Personaje implements Comparable<Personaje>{
         this.usos = usos;
     }
     
-    // Getters
     public Integer getVida() {
         return vida;
     }

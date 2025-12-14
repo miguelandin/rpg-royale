@@ -17,7 +17,7 @@ public class Luchador extends Personaje{
     	boolean exito = false;
         if (super.usos != 0) {
             super.vida += 10;
-            super.daño += super.vida / 5;
+            super.daño += (int) super.vida / 5;
             super.usos--;
             exito = true;
         }

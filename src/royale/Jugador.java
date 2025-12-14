@@ -33,7 +33,9 @@ public class Jugador implements Comparable<Jugador>{
 				dañoTotal *= this.personaje.getSuerte();
 		}
 		
-		objetivo.setVida(objetivo.getVida() - dañoTotal);
+		double multiplicadorDaño = 100/(100+objetivo.getArmadura());
+		Integer dañoReal = (int) (dañoTotal * multiplicadorDaño);
+		objetivo.setVida(objetivo.getVida() - dañoReal);
 		
 		return dañoTotal;
 	}
