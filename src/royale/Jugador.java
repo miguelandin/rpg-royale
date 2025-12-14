@@ -24,20 +24,22 @@ public class Jugador implements Comparable<Jugador>{
 		this.herramienta = herramienta;
 	}
 
-	public void atacar(Personaje objetivo) {
-		Integer dañoTotal = this.personaje.daño;
+	public Integer atacar(Personaje objetivo) {
+		Integer dañoTotal = this.personaje.getDaño();
 		if(!this.herramienta.comprobarModificacion()) { // si no está rota
 			dañoTotal += this.herramienta.getDaño();
-			this.herramienta.bajarDurabilidad(5);
+			this.herramienta.bajarDurabilidad(10);
 			if(this.herramienta.esCritico()) // si es ataque crítico
-				dañoTotal *= 2;
+				dañoTotal *= this.personaje.getSuerte();
 		}
 		
-		objetivo.vida -= dañoTotal;
+		objetivo.setVida(objetivo.getVida() - dañoTotal);
+		
+		return dañoTotal;
 	}
 
-	public void curar() {
-		this.personaje.vida += 20;
+	public Integer curar() {
+		return this.personaje.curar();
 	}
 
 	@Override

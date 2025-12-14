@@ -2,8 +2,8 @@ package royale;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException; //Importo la excepciOn de Entrada/Salida
-import java.util.ArrayList; //Importo la lista dinámica
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class Volcado {
     private ArrayList<String> listaDeLaPartida;

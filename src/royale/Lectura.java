@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lectura {
-
-    // Clase estatica no se instancia
     private Lectura() {}
 
     public static List<String[]> leerJugadores(String ruta) {
