@@ -1,0 +1,10 @@
+Tanque;Espada;Miguel
+Asesino;Daga;Carlos
+Luchador;Mandoble;Laura
+Tanque;Mandoble;Andres
+Asesino;Espada;Lucia
+Luchador;Daga;Pablo
+Tanque;Espada;Marta
+Asesino;Mandoble;Diego
+Luchador;Espada;Sofia
+Tanque;Daga;Alberto
