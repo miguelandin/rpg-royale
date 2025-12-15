@@ -51,21 +51,10 @@ public abstract class Personaje implements Comparable<Personaje>{
     public void setVida(Integer vida) {
         this.vida = vida;
     }
-
-    public void setDaño(Integer daño) {
-        this.daño = daño;
-    }
-
-    public void setArmadura(Integer armadura) {
-        this.armadura = armadura;
-    }
-    
-    public void setSuerte(Integer suerte) {
-        this.suerte = suerte;
-    }
     
     public void setUsos(Integer usos) {
-    	this.usos = usos;
+    	this.usos += usos;
+    	System.out.println("Usos de habilidad especial: +" + usos);
     }
     
     public boolean habilidadEspecial() {

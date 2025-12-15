@@ -59,7 +59,7 @@ public abstract class Herramienta implements Comparable<Herramienta>, Modificabl
 	
 	@Override
 	public String toString() {
-		return "[nombre=" + nombre + ", daño=" + daño + ", crítico=" + critico + "%, durabilidad=" + durabilidad + "]";
+		return nombre + "{daño=" + daño + ", crítico=" + critico + "%, durabilidad=" + durabilidad + "}";
 	}
 
 	@Override

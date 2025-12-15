@@ -16,8 +16,7 @@ public class Tanque extends Personaje{
     public boolean habilidadEspecial() {
     	boolean exito = false;
         if (super.usos != 0) {
-            super.vida += 10;
-            super.armadura += 10;
+            super.armadura += (int) (super.vida * 0.25);
             super.usos--;
             exito = true;
         }

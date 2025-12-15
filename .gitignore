@@ -18,3 +18,5 @@ Thumbs.db
 
 *.properties
 *.env
+
+public/logs.txt
