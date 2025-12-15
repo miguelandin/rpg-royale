@@ -152,6 +152,9 @@ public class GameLoop {
     }
     
     public void jugar() throws IOException {
+    	if(this.combatientes.size() == 0)
+    		throw new ErrorSinCombatientes();
+    	
     	int ronda = 1;    	
     	while(true) {
     		String rondaS = "Ronda " + ronda++;
@@ -161,19 +164,27 @@ public class GameLoop {
     		scanner.nextLine();
     		
     		if(this.combatientes.size() <= 1)
-    			break;
-    		
-    		for(int i = 0; i < this.jugadores.size(); i++) {
-        		if(this.combatientes.size() <= 1)
-        			break;
-    			hacerAccion(jugadores.get(i));
-    		}
-    		
-    		for(int i = 0; i < this.ia.size(); i++) {
-        		if(this.combatientes.size() <= 1)
-        			break;
-    			hacerAccionAutomatica(ia.get(i));
-    		}
+                break;
+            
+            for(int i = 0; i < this.jugadores.size(); i++) {
+            	Jugador jugador = jugadores.get(i);
+            	
+                if (this.combatientes.contains(jugador)) {
+            		if(this.combatientes.size() <= 1)
+            			break;
+        			hacerAccion(jugador);
+                }
+            }
+            
+            for(int i = 0; i < this.ia.size(); i++) {
+            	Jugador bot = ia.get(i);
+            	
+                if (this.combatientes.contains(bot)) {
+            		if(this.combatientes.size() <= 1)
+            			break;
+        			hacerAccionAutomatica(bot);
+                }
+            }
     	}
     	
     	limpiarPantalla();

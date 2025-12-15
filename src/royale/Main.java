@@ -5,17 +5,19 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String args[]) throws ErrorEstadisticas, IOException {
-		final String RUTA_IN = "public/jugadores.txt";
 		GameLoop gameLoop;
 		Scanner scanner = new Scanner(System.in);
-		int input;
 		
 		while(true){
 			System.out.println("Seccione opción:\n(1) Cargar Partida\n(2) Nueva Partida\n(3) Salir");
-			input = scanner.nextInt();
+			int input = scanner.nextInt();
+			scanner.nextLine();
 			
-			if(input == 1)
-				gameLoop = new GameLoop(RUTA_IN);
+			if(input == 1) {
+				System.out.print("Ruta al fichero: ");
+				String inputS = scanner.nextLine();
+				gameLoop = new GameLoop(inputS);				
+			}
 			else if(input == 2)
 				gameLoop = new GameLoop();
 			else
@@ -23,5 +25,7 @@ public class Main {
 			
 			gameLoop.jugar();
 		}
+		
+		scanner.close();
 	}
 }
