@@ -68,7 +68,7 @@ public abstract class Personaje implements Comparable<Personaje>{
 
     @Override
     public String toString() {
-        return nombre +"{" + "Vida=" + this.vida + ", Ataque=" + this.daño + ", Defensa=" + this.armadura + ", Suerte=" + this.suerte +"}";
+        return nombre +"{" + "Vida=" + this.vida + ", Ataque=" + this.daño + ", Defensa=" + this.armadura + ", Suerte=" + this.suerte +", Usos=" + this.usos + "}";
     }
     
     @Override

@@ -44,7 +44,7 @@ public class Jugador implements Comparable<Jugador>{
 		Integer dañoReal = (int) (dañoTotal * multiplicadorDaño);
 		objetivo.personaje.setVida(objetivo.personaje.getVida() - dañoReal);
 		
-		System.out.println("Daño infligido: " + dañoReal);
+		System.out.println("Daño infligido a " + objetivo.nombre + ": " + dañoReal);
 		return dañoTotal;
 	}
 
