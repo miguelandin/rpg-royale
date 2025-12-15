@@ -35,10 +35,11 @@ rpg-royale
 ![img](public/UML.png)
 
 ---
-### Usar git
-##### Subir cambios
+### Instalación
 ```bash
-git add . # añade los cambios realizados
-git commit -m "CAMBIOS" # Añadir un mensaje describiendo los cambios
-git push # hacer un push de los cambios (!Hacerlo en tu rama de trabajdo)
+git clone https://github.com/miguelandin/rpg-royale.git
+cd rpg-royale
+javac -d ./bin src/royale/*.java
+cd bin
+java royale.Main
 ```
