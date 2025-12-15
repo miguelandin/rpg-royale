@@ -5,21 +5,29 @@ Made by: Marco, Hugo, Miguel, Mike, Pablo and Alfredo
 ### tree
 ```txt
 rpg-royale
-│
 ├── public
-│   ├── input.txt
-│   ├── output.txt
-│   └── UML.png
+│   ├── jugadores.txt
+│   ├── logs.txt
+│   └── UML.png
 ├── README.md
 └── src
     ├── module-info.java
     └── royale
-        ├── Character.java
-        ├── FileManager.java
-        ├── GameController.java
+        ├── Asesino.java
+        ├── Daga.java
+        ├── ErrorEstadisticas.java
+        ├── Espada.java
+        ├── GameLoop.java
+        ├── Herramienta.java
+        ├── Jugador.java
+        ├── Lectura.java
+        ├── Luchador.java
         ├── Main.java
-        ├── Modifiable.java
-        └── Tool.java
+        ├── Mandoble.java
+        ├── Modificable.java
+        ├── Personaje.java
+        ├── Tanque.java
+        └── Volcado.java
 ```
 
 ---
